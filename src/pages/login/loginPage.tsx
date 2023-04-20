@@ -1,9 +1,13 @@
-import React from 'react'
-import {TextInput,View,ScrollView,TouchableOpacity,Text} from 'react-native'
+import React,{useState} from 'react'
+import {TextInput,View,ScrollView,TouchableOpacity,Text,ActivityIndicator} from 'react-native'
 import { Style } from './style';
+import {useNavigation} from '@react-navigation/native'
 
 
 export const LoginPage =()=>{
+    const [load,setLoad] = useState(true)
+    const navigator = useNavigation()
+   
     return(
        
         <View style={Style.container}>
@@ -21,6 +25,10 @@ export const LoginPage =()=>{
             />
             <TouchableOpacity
                 style={Style.Btn}
+                onPress={()=>{
+                    navigator.navigate("Welcome")
+                }}
+                
             >
                 <Text style={Style.BtnItem}>Entrar</Text>
             </TouchableOpacity>
