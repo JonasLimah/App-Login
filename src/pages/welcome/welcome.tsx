@@ -1,8 +1,7 @@
 import React from 'react'
-import {TextInput,View,FlatList,ScrollView,TouchableOpacity,Text,Image} from 'react-native'
-
+import {TextInput,View,FlatList,TouchableOpacity,Text,Image} from 'react-native'
 import { Style } from './style';
-import {useState} from 'react'
+import {useState} from 'react';
 
 type item = {
     key:number,
@@ -11,7 +10,7 @@ type item = {
 }
 
 export const Welcome =()=>{
- 
+    
     const [phase,setPhase]=useState("hj e um dia muito legal dsnosdfi aisdhfoihsdafoih aosdifhoisdhfisdh")
     const promo:Array<item> = [
         {key:Math.random(),name:"Depilçaão",Preco:10.00},

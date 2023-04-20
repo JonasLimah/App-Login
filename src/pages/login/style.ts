@@ -8,6 +8,11 @@ export const Style = StyleSheet.create({
         justifyContent:"center",
         backgroundColor:'#FFB6C1'
     },
+    load:{
+        flex:1,
+        alignItems:"center",
+        justifyContent:"center"
+    },
     AreaLogin:{
         width:300,
         height:380,

@@ -16,7 +16,11 @@ export const PagesArea =()=>{
            
         }}>
             <Stack.Screen name='Login' component={LoginPage}/>
-            <Stack.Screen name='Welcome' component={Welcome}/>
+            <Stack.Screen name='Welcome' component={Welcome}
+              options={{
+                headerBackTitleVisible:false
+              }}
+            />
         </Stack.Navigator>
        
     );
