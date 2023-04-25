@@ -47,30 +47,7 @@ export const Welcome =()=>{
                 </View>}
                
             />
-                <View style={Style.areaService}>
-
-                    <View >
-                        <TouchableOpacity style={Style.itemService}>
-                        <Image source={require('../../assets/livro-de-visitas.png')}
-                            style={{width:30,height:30}}
-                            />
-                               <Text>Agendamento</Text>
-                        </TouchableOpacity>
-                      
-                    </View>
-                    <View >
-                        <TouchableOpacity style={Style.itemService}>
-                           <Image source={require('../../assets/configuracoes.png')}
-                            style={{width:30,height:30}}
-                            />
-                            <Text>Configurações</Text>
-                        </TouchableOpacity>
-                        
-                    </View>
-
-                    
-                </View>
-            
+               
            
         </View>
     );   

@@ -4,7 +4,7 @@ export const Style = StyleSheet.create({
     container:{
         flex:1,
         padding:10,
-        backgroundColor:"#FFB6C1"
+        backgroundColor:"#fff"
     },
     welcomeInfo:{
         
@@ -19,26 +19,31 @@ export const Style = StyleSheet.create({
 
     },dailyPhase:{
         fontSize:18,
-        color:"#F0F8FF",
-
+        color:"#FF69B4",
+        
         
     },
     areaPhase:{
         height:"auto",
         padding:10,
         borderRadius:10,
-        backgroundColor:"#F0F8FF",
+        backgroundColor:"#FFB6C1",
         alignItems:"center",
-        justifyContent:"center"
+        justifyContent:"center",
+        borderColor:"#000",
+        borderWidth:1
     },
     Phase:{
         fontSize:14,
-        color:"#FF69B4",
-        fontWeight:"bold"
+        color:"#FFF",
+        fontWeight:"bold",
+        shadowColor:"#000",
+        shadowOpacity:0.3,
+        shadowRadius:1
 
     },
     ItemList:{
-      
+        backgroundColor:"#fff",
         alignItems:"center",
         justifyContent:"center",
         marginTop:10,
@@ -48,7 +53,7 @@ export const Style = StyleSheet.create({
     listInfo:{
       
         backgroundColor:"#F0F8FF",
-        width:200,
+        width:"100%",
         borderRadius:10,
         height:100,
         alignItems:"center",
