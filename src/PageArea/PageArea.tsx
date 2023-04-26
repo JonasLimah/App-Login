@@ -1,17 +1,18 @@
 import React from 'react';
 import {View,Text,Image} from "react-native";
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
-import {createNativeStackNavigator} from '@react-navigation/native-stack'
-import { createStackNavigator } from '@react-navigation/stack';
 import {LoginPage} from  '../pages/login/loginPage'
 import { Welcome } from '../pages/welcome/welcome';
 import { Setting } from '../pages/Setting/SettingStack';
 import { Date } from '../pages/Date/DateScreen';
 
 
+
 export const PagesArea =()=>{
     const Stack = createBottomTabNavigator()
+    
  return(
+      <>
       <Stack.Navigator
        screenOptions={
         ({route})=>({
@@ -46,6 +47,8 @@ export const PagesArea =()=>{
             return(
               <Image source={img} style={{width:24,height:24}}/>
             );}}) } >
+
+
             <Stack.Screen name='LogOut' component={LoginPage}
               options={{
                 tabBarStyle:{
@@ -82,6 +85,10 @@ export const PagesArea =()=>{
                 headerStyle:{
                 backgroundColor:"#FFB6C1",
               }, }}/>
+            
+               
         </Stack.Navigator>
+        
+        </>
     );
 }
